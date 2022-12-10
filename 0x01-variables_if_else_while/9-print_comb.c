@@ -9,17 +9,17 @@
 int main(void)
 {
 	int n;
-		for (n = 0; n <= 9; n++)
-		{
-		putchar(n + '0');
-		
+
+	while (n < 10)
+	{
+		putchar(48 + n);
 		if (n < 9)
 		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
-		}
-		putchar('\n');
-	
+		n++;
+	}
+	putchar('\n');
 	return (0);
 }
