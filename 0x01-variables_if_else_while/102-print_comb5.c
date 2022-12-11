@@ -23,8 +23,8 @@ int main(void)
 
 		while (c2 <= 99)
 		{
-			f_d2 = (c / 10 + 0);
-			l_d2 = (c % 10 + 0);
+			f_d2 = (c2 / 10 + 0);
+			l_d2 = (c2 % 10 + 0);
 			if (c < c2)
 			{
 				putchar(f_d);
