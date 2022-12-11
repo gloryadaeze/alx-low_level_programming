@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main-Entry
  * description: 'the programs description'
@@ -10,7 +11,9 @@ int main(void)
 	int j;
 
 	for (i = 0; i < 100; i++)
+	{
 		for (j = 0; j < 100; j++)
+		{
 			if (j > i)
 			{
 				putchar(i / 10 + 0);
@@ -20,9 +23,13 @@ int main(void)
 				putchar(j % 10 + 0);
 
 				if (i * 100 + j != 9899)
+				{
 					putchar(',');
 					putchar(' ');
+				}
 			}
-	putchar ('\n');
+		}
+	}
+	putchar('\n');
 	return (0);
 }
