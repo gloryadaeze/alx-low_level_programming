@@ -15,9 +15,9 @@ int main(void)
 	while (b < 10)
 	{
 		a = 0;
-		while (ones < 10)
+		while (a < 10)
 		{
-			if (b != c && c < b)
+			if (b != a && a < b)
 			{
 				putchar('0' + b);
 				putchar('0' + a);
