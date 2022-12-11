@@ -7,22 +7,33 @@
  */
 int main(void)
 {
-	int i;
-	int j;
+	int c = 0;
+	int f_d;
+	int l_d;
 
-	for (i = 0; i < 100; i++)
+	int c2;
+	int f_d2;
+	int l_d2;
+
+	while (c <= 98)
 	{
-		for (j = 0; j < 100; j++)
-		{
-			if (j > i)
-			{
-				putchar(i / 10 + 0);
-				putchar(i % 10 + 0);
-				putchar(' ');
-				putchar(j / 10 + 0);
-				putchar(j % 10 + 0);
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
+		c2 = 0;
 
-				if (i * 100 + j != 9899)
+		while (c2 <= 99)
+		{
+			f_d2 = (c / 10 + '0');
+			l_d2 = (c % 10 + '0');
+			if (c < c2)
+			{
+				putchar(f_d);
+				putchar(l_d);
+				putchar(' ');
+				putchar(f_d2);
+				putchar(l_d2);
+
+				if (c != 98)
 				{
 					putchar(',');
 					putchar(' ');
