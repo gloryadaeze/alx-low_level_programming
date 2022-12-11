@@ -39,7 +39,9 @@ int main(void)
 					putchar(' ');
 				}
 			}
+			c2++;
 		}
+		c++;
 	}
 	putchar('\n');
 	return (0);
