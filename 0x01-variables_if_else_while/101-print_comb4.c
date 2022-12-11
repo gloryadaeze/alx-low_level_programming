@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Entry
- * Description: 'description of the programs'
+ * main - Entry point.
+ * Description: 'the program's description'
  * Request: always zero
  */
-
 int main(void)
 {
 	int i;
@@ -40,5 +39,5 @@ int main(void)
 	}
 
 	putchar('\n');
-	return (0);
+return (0);
 }

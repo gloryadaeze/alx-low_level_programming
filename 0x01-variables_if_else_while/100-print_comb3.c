@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry
@@ -8,21 +9,27 @@
 
 int main(void)
 {
-	int tens;
-	int ones;
+	int a;
+	int b = 0;
 
-	for (tens = 0; tens <= 9; tens++)
+	while (b < 10)
 	{
-		for (ones = tens + 1; ones <= 9; ones++)
+		a = 0;
+		while (ones < 10)
 		{
-			putchar(tens + 0);
-			putchar(ones + 0);
-			if (tens < 8)
+			if (b != c && c < b)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + b);
+				putchar('0' + a);
+				if (a + b != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			a++;
 		}
+		b++;
 	}
 	putchar('\n');
 	return (0);
