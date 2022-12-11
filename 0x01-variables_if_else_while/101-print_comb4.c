@@ -3,7 +3,7 @@
 /**
  * main - Entry point.
  * Description: 'the program's description'
- * Request: always zero
+ * Return: always zero
  */
 int main(void)
 {
@@ -39,5 +39,5 @@ int main(void)
 	}
 
 	putchar('\n');
-return (0);
+	return (0);
 }
