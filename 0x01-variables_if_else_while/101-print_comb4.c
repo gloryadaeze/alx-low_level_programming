@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry
  * Description: 'description of the programs'
@@ -9,22 +10,34 @@ int main(void)
 {
 	int i;
 	int n;
-	int j;
+	int j = 0;
 
-	for (i = 48; i < 58; i++)
-		for (n = 48; n < 58; n++)
-			if (n > i)
-				for (j = 48; j < 58; j++)
-					if (j > n)
-						putchar(i);
-						putchar(n);
-						putchar(j);
-						if (i == 55; n == 56; j == 57)
-						{
-							break;
-						}
+	while (j < 10)
+	{
+		n = 0;
+		while (n < 10)
+		{
+			i = 0;
+			while (i < 10)
+			{
+				if (i != n && n != j && j < n && n < i)
+				{
+					putchar('0' + j);
+					putchar('0' + n);
+					putchar('0' + i);
+					if (i + n + j != 9 + 8 + 7)
+					{
 						putchar(',');
 						putchar(' ');
+					}
+				}
+
+				i++;
+			}
+			n++;
+		}
+		j++;
+	}
 
 	putchar('\n');
 	return (0);
