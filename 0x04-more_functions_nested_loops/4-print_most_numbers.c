@@ -1,13 +1,11 @@
 #include "main.h"
 /**
  * print_most_numbers - checker
- * Return: always 0
  */
 
 void print_most_numbers(void)
 {
-	int i;
-	int j;
+	int i, j;
 
 	for (i = 1; i <= 10; i++)
 	{
