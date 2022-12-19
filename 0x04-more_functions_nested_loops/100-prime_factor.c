@@ -8,20 +8,18 @@
 
 int main(void)
 {
-	long prime = 612852475143, fp;
+	long prime, fx;
+	long number = 612852475143;
+	double square = sqrt(number);
 
-	while (fp < (prime / 2))
+
+	for  (prime = 1; prime <= square; prime++)
 	{
-		if ((prime % 2) == 0)
+		if ((number % prime) == 0)
 		{
-			prime /= 2;
-			continue;
+			fx = number/prime;
 		}
-		for (fp = 3; fp < (prime / 2); fp += 2)
-		{
-			if ((prime % fp) == 0)
-				prime /= fp;
 	}
-	printf("%ld\n", prime);
+	printf("%ld\n", fx);
 	return (0);
 }
