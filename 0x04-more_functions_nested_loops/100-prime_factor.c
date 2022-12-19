@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -7,18 +8,20 @@
 
 int main(void)
 {
-	long int n, fp;
+	long prime = 612852475143, fp;
 
-	n = 612852475143;
-
-	for (fp = 2; fp <= n; fp++)
+	while (fp < (prime / 2))
 	{
-		if (n % fp == 0)
+		if ((prime % 2) == 0)
 		{
-			n /= fp;
-			fp--;
+			prime /= 2;
+			continue;
 		}
+		for (fp = 3; fp < (prime / 2); fp += 2)
+		{
+			if ((prime % fp) == 0)
+				prime /= fp;
 	}
-	printf("%1d\n", fp);
+	printf("%1d\n", prime);
 	return (0);
 }
