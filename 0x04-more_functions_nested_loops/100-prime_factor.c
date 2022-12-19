@@ -21,4 +21,4 @@ int main(void)
 	}
 	printf("%1d\n", fp);
 	return (0);
-
+}
