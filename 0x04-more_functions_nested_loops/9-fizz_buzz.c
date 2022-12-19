@@ -29,9 +29,8 @@ int main(void)
 		}
 		if (n != 100)
 		{
-			continue;
+			printf(" ");
 		}
-		printf(" ");
 	}
 	printf("\n");
 	return (0);
