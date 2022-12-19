@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <math.h>
 #include <stdio.h>
 
 /**
@@ -12,12 +12,11 @@ int main(void)
 	long number = 612852475143;
 	double square = sqrt(number);
 
-
 	for  (prime = 1; prime <= square; prime++)
 	{
 		if ((number % prime) == 0)
 		{
-			fx = number/prime;
+			fx = number / prime;
 		}
 	}
 	printf("%ld\n", fx);
