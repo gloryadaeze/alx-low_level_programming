@@ -2,10 +2,12 @@
 
 /**
  * mul - checker
- * @c: char to check
+ * @a: first number
+ * @b: second numberr
  * Return: 0 or 1
  */
 
 int mul(int a, int b)
 {
-
+	return (a * b);
+}
