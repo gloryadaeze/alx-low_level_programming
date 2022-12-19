@@ -22,6 +22,6 @@ int main(void)
 			if ((prime % fp) == 0)
 				prime /= fp;
 	}
-	printf("%1d\n", prime);
+	printf("%ld\n", prime);
 	return (0);
 }
